@@ -1,3 +1,5 @@
+# Por mais que as respostas 2 e 3 da pergunta "Como você está se sentindo hoje" levem ao mesmo resultado nesse protótipo, decidi dividi-las em duas sessões diferentes para via de maior personalização
+# Perguntas são meramente ILUSTRATIVAS assim como as dicas ao final do questionário. NÃO se deve segui-las.
 print("Como você está se sentindo hoje?")
 print("1- Bem. Sem nenhum desconforto.")
 print("2- Com algum desconforto.")
@@ -8,6 +10,7 @@ if p1 == 1:
   print("Ok. Já que você não está com nenhum desconforto, nos vemos na próxima vez.")
 if p1 == 2:
   print("Ok. Iremos fazer algumas perguntas para você, para entedermos o que pode estar te causando o mal estar.")
+  #PRIMEIRA PERGUNTA - PERSONALIZÁVEL
   print("Em uma escala de 1 a 5. Quanto tempo você sente que demorou para dormir na última noite.")
   print("1- Mais de 1 hora.")
   print("2- 45 - 60 minutos.")
@@ -16,6 +19,7 @@ if p1 == 2:
   print("5- Menos de 15 minutos.")
   s1=int(input())
   print("---------------------------------------------------------------------")
+  #SEGUNDA PERGUNTA - PERSONALIZÁVEL
   print("Você acordou no meio da noite? Se sim, quanto tempo levou para dormir novamente.")
   print("1- Demorei 1 hora ou mais para voltar a dormir.")
   print("2- Demorei 45 minutos para voltar a dormir.")
@@ -24,6 +28,7 @@ if p1 == 2:
   print("5- Não acordei no meio da noite.")
   s2=int(input())
   print("---------------------------------------------------------------------")
+  #TERCEIRA PERGUNTA - PERSONALIZÁVEL
   print("Nessas últimas noite, você acordou quantas vezes no meio da noite?")
   print("1- Mais de 4 vezes.")
   print("2- 3 vezes.")
@@ -32,6 +37,7 @@ if p1 == 2:
   print("5- Não percebi que acordei.")
   s3=int(input())
   print("---------------------------------------------------------------------")
+  #QUARTA PERGUNTA - PERSONALIZÁVEL
   print("Você realizou alguma dessas atividades momentos antes de dormir?")
   print("1- Todas as seguintes.")
   print("2- Utilizo aparelhos eletrônicos (celulares, notebooks, etc.).")
@@ -40,6 +46,7 @@ if p1 == 2:
   print("5- Não realize nenhuma das atividades anteriores.")
   s4=int(input())
   print("---------------------------------------------------------------------")
+  #QUINTA PERGUNTA - PERSONALIZÁVEL
   print("Você teve problemas para se manter acordado durante suas atividades diárias?")
   print("1- Sim. Adormeci de repente, sem perceber.")
   print("2- Sim. Me senti sonolento, porém me segurei para não dormir.")
@@ -48,6 +55,7 @@ if p1 == 2:
   print("5- Não senti sono algum durante o dia.")
   s5=int(input())
   print("---------------------------------------------------------------------")
+  #SEXTA PERGUNTA - PERSONALIZÁVEL
   print("Quantas horas você costuma dormir por noite?")
   print("1- Menos de 4 horas.")
   print("2- 4 a 5 horas.")
@@ -56,6 +64,7 @@ if p1 == 2:
   print("5- 10 horas ou mais.")
   s6=int(input())
   print("---------------------------------------------------------------------")
+  #SÉTIMA PERGUNTA - PERSONALIZÁVEL
   print("Você ingere muito líquido antes de dormir?")
   print("1- Bebo quando acordo durante a noite.")
   print("2- Mais de um copo antes de dormir.")
@@ -64,6 +73,7 @@ if p1 == 2:
   print("5- Não bebo nada pelo menos 1/ 2 horas antes de dormir.")
   s7=int(input())
   print("---------------------------------------------------------------------")
+  #OITAVA PERGUNTA - PERSONALIZÁVEL
   print("Quantas vezes na semana você se exercitou?")
   print("1- Não me exercito nenhuma vez na semana.")
   print("2- 1 vez na semana.")
@@ -72,6 +82,7 @@ if p1 == 2:
   print("5- Todos os dias da semana.")
   s8=int(input())
   print("---------------------------------------------------------------------")
+  #NONA PERGUNTA - PERSONALIZÁVEL
   print("Você costuma ter pesadelos? Se sim, com que frequência?")
   print("1- Mais do que uma vez por semana.")
   print("2- 1 vez por semana.")
@@ -80,7 +91,7 @@ if p1 == 2:
   print("5- Não tenho pesadelos.")
   s9=int(input())
   print("---------------------------------------------------------------------")
-  result=(s1+s2+s3+s4+s5+s6+s7+s8+s9)/9
+  result=(s1+s2+s3+s4+s5+s6+s7+s8+s9)/9 #MÉDIA DO SCORE - PERSONALIZÁVEL
   print("Seu score total foi:",round(result,2))
   if result == 5:
     print("O seu score está muito bom. Se o problema persistir, recomendamos entrar em contato com algum médico credenciado da Alice pelo app.")
