@@ -1,5 +1,6 @@
-# Por mais que as respostas 2 e 3 da pergunta "Como você está se sentindo hoje" levem ao mesmo resultado nesse protótipo, decidi dividi-las em duas sessões diferentes para via de maior personalização
+# Por mais que as respostas 2 e 3 da pergunta "Como você está se sentindo hoje" levem ao mesmo resultado nesse protótipo, decidi dividi-las em duas sessões diferentes para via de maior personalização.
 # Perguntas são meramente ILUSTRATIVAS assim como as dicas ao final do questionário. NÃO se deve segui-las.
+# Caso for utilizar, coloque perguntas e dicas com embasamentos científicos.
 print("Como você está se sentindo hoje?")
 print("1- Bem. Sem nenhum desconforto.")
 print("2- Com algum desconforto.")
